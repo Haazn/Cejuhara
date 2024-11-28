@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Rouge+Script&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Corinthia" rel="stylesheet" type="text/css" />
+    <link href="http://fonts.googleapis.com/css?family=Kings" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <nav class="navbar">
+        <div class = "navdiv">
+            <div class="logo"><h1>C E J U H A R A&#8482;</h1></div>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="Aboutus.html">About us</a></li>
+                <li><a href="Login.html">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    
+    <div class="slider-frame">
+        <div class="slide-images">
+                <div class="img-container">
+                    <img src="https://scontent.fmnl17-2.fna.fbcdn.net/v/t1.15752-9/462575630_570962069017775_8823292940704280285_n.png?_nc_cat=107&ccb=1-7&_nc_sid=9f807c&_nc_ohc=iBgIW3zUnQQQ7kNvgHcB7gO&_nc_zt=23&_nc_ht=scontent.fmnl17-2.fna&oh=03_Q7cD1QFkJ-kAek42IXaIgi0zNdBvZd8Ctk6dMI_74nqQl2VPMQ&oe=676D5692">
+                </div>
+                <div class="img-container">
+                    <img src="https://scontent.fmnl17-3.fna.fbcdn.net/v/t1.15752-9/462583427_546476194914748_5823196498919662771_n.png?_nc_cat=103&ccb=1-7&_nc_sid=9f807c&_nc_ohc=8yyP-oo5W9sQ7kNvgEIAw69&_nc_zt=23&_nc_ht=scontent.fmnl17-3.fna&oh=03_Q7cD1QEKOnSBoIOd14-w7yn9hKtzWsrh38h3IJ8IJIWQgIgXOQ&oe=676FFED8">
+                </div>
+                <div class="img-container">
+                    <img src="https://scontent.fmnl17-7.fna.fbcdn.net/v/t1.15752-9/462570382_3749920021915583_1912361540230259950_n.png?_nc_cat=108&ccb=1-7&_nc_sid=9f807c&_nc_ohc=_ijJdjKpYbcQ7kNvgGecz6F&_nc_zt=23&_nc_ht=scontent.fmnl17-7.fna&oh=03_Q7cD1QH5P_ts4h4lAZWsK_58jEg5vkNJFUtQakWrzB9MY0-QfQ&oe=67700FCC">
+                </div>
+        </div>
+    </div>
+    
+    
+    <div class="centergallery">
+        <div class="gal-container">
+            <div class="galtext-section">
+                <h1 style="color: #ffffff; font-size: 35px; font-weight: lighter;">LUXURY RINGS</h1>
+                <p style="font-family:'Tangerine'; font-size: 32px;">
+                    Where timeless elegance meets exceptional craftsmanship. Discover our exclusive collection of luxury rings, each designed to embody sophistication
+                    and individuality. Experience the art of fine jewelry redefined.
+                </p>
+                <button id="ViewGallery" class="btnGal" style="font-size: 20px; font-weight: lighter;">VIEW GALLERY</button>
+            </div>
+            <div class="galimage-section">
+                <img src="https://st2.depositphotos.com/1000559/6728/i/450/depositphotos_67283077-stock-photo-beautiful-ring-with-amethyst.jpg" alt="Gemstone Rings">
+            </div>
+        </div>
+    </div>
+    <hr class="grey-line">
+    <div class="subtitle">
+        <h1 style=" font-size: 135px;">C E J U H A R A</h1>
+    </div>
+    <div class="subsubtitle">
+        <p style=" font-size: 35px;">LUXURIOUS JEWELRY</p>
+    </div>
+    <hr class="grey-line">
+    <div class="parent-container">
+    <div class="contact">
+    <p>Contact Us!</p>
+    <div class="contactnum"><img src="https://scontent.fmnl17-6.fna.fbcdn.net/v/t1.15752-9/462559342_1258737295328053_298006593679333914_n.png?_nc_cat=109&ccb=1-7&_nc_sid=9f807c&_nc_ohc=p6tjzcfRlwoQ7kNvgEeRV6q&_nc_zt=23&_nc_ht=scontent.fmnl17-6.fna&oh=03_Q7cD1QFOVieFpztqjhWS9ExYLKimFpppURAZVoP-n7B5lFmNpA&oe=677026DF" alt=""></div>
+</div>
+</div>
+    <script>
+        $(document).ready(function() {
+            $('#ViewGallery').on('click', function() {
+                window.location.href = 'Gallery.html';
+            });
+        });
+    </script>
+</body>
+
+</html>

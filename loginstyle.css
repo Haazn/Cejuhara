@@ -1,0 +1,90 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, rgba(0, 0, 139, 0.7), rgba(75, 0, 130, 0.7), rgba(0, 0, 0, 0.7)), url('https://scontent.fmnl17-3.fna.fbcdn.net/v/t1.15752-9/462581991_1614034376200294_4853229579115756558_n.png?_nc_cat=106&ccb=1-7&_nc_sid=9f807c&_nc_ohc=KL-5nPNiRpMQ7kNvgHVhxiD&_nc_zt=23&_nc_ht=scontent.fmnl17-3.fna&oh=03_Q7cD1QHUVl9WcWYiLKGGb4h6Us_6_oMjUhMzA6WDpR0iU5CPLA&oe=677013F9');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.login-box {
+    background: rgba(0, 0, 0, 0.85);
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+    width: 350px;
+    text-align: center;
+    z-index: 1;
+}
+
+h2 {
+    
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: block;
+    color: #f4f4f4;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    box-sizing: border-box;
+}
+
+.input-group input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+    font-style: italic;
+}
+
+button {
+    background-color: #2575fc;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #6a11cb;
+    transform: scale(1.05);
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    color: white;
+}
