@@ -17,7 +17,7 @@ $(document).ready(function () {
             message.text("Login successful! Redirecting to home...").addClass("success").removeClass("error");
 
             setTimeout(function() {
-                window.location.href = "home.html";
+                window.location.href = "Home.html";
             }, 2000);
         } else {
             message.text("Invalid username or password. Please try again.").addClass("error").removeClass("success");
