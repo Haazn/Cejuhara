@@ -1,31 +1,21 @@
-$(document).ready(function () {
-    const validUsername = "admin";
-    const validPassword = "12345"; 
+$(document).ready(function() {
+    $('#submit').click(function(event) {
+        event.preventDefault();
 
-    $('#login-form').submit(function (e) {
-        e.preventDefault(); 
+        let isValid = true;
+        $('#login-form input').each(function() {
+            if ($(this).val().trim() === '') {
+                isValid = false;
+                $(this).css('border-color', 'red');
+            } else {
+                $(this).css('border-color', '');
+            }
+        });
 
-        const username = $('#username').val();
-        const password = $('#password').val();
-        const message = $('#message');
-
-        console.log("Entered Username: " + username);
-        console.log("Entered Password: " + password);
-
-        if (username === validUsername && password === validPassword) {
-            
-            message.text("Login successful! Redirecting to home...").addClass("success").removeClass("error");
-
-            setTimeout(function() {
-                window.location.href = "Home.html";
-            }, 2000);
+        if (isValid) {
+            window.location.href = 'Home.html';
         } else {
-            message.text("Invalid username or password. Please try again.").addClass("error").removeClass("success");
+            $('#message').text('Please fill in all fields').css('color', 'red');
         }
-
-        $('#username').val('');
-        $('#password').val('')
-        $('#address').val('')
-        $('#paymentnum').val('');
     });
 });
